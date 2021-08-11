@@ -1,18 +1,8 @@
 defmodule Scraper do
-  @moduledoc """
-  Documentation for `Scraper`.
-  """
+  # placeholder function
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Scraper.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  1..5
+  |> Enum.random()
+  |> :timer.seconds()
+  |> Process.sleep()
 end
