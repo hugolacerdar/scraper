@@ -4,7 +4,7 @@ defmodule PageConsumer do
 
   def start_link(_args) do
     initial_state = []
-    GenServer.start_link(__MODULE__, initial_state)
+    GenStage.start_link(__MODULE__, initial_state)
   end
 
   def init(initial_state) do
